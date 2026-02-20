@@ -4,8 +4,6 @@ import { useState } from "react";
 import {
     Stethoscope,
     HeartPulse,
-    Activity,
-    Zap,
     Dumbbell,
 } from "lucide-react";
 import ServiceModal, { ServiceData } from "./ServiceModal";
@@ -46,6 +44,42 @@ const TherapyDeviceIcon = ({ className }: { className?: string }) => (
     />
 );
 
+// Custom SVG for Elettromiografie (Loaded via CSS Mask)
+const ElectromyographyIcon = ({ className }: { className?: string }) => (
+    <div
+        className={className}
+        style={{
+            WebkitMaskImage: 'url(/electromyography.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskRepeat: 'no-repeat',
+            WebkitMaskPosition: 'center',
+            maskImage: 'url(/electromyography.svg)',
+            maskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            backgroundColor: 'currentColor'
+        }}
+    />
+);
+
+// Custom SVG for Diagnostica Vascolare (Loaded via CSS Mask)
+const DopplerIcon = ({ className }: { className?: string }) => (
+    <div
+        className={className}
+        style={{
+            WebkitMaskImage: 'url(/doppler.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskRepeat: 'no-repeat',
+            WebkitMaskPosition: 'center',
+            maskImage: 'url(/doppler.svg)',
+            maskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            backgroundColor: 'currentColor'
+        }}
+    />
+);
+
 const services: ServiceData[] = [
     {
         id: "visite",
@@ -69,7 +103,7 @@ const services: ServiceData[] = [
     {
         id: "vascolare",
         title: "Diagnostica Vascolare",
-        icon: Activity,
+        icon: DopplerIcon,
         description:
             "Esami non invasivi per lo studio della circolazione arteriosa e venosa.",
         details: ["Ecocolordoppler Arterioso", "Ecocolordoppler Venoso"],
@@ -89,7 +123,7 @@ const services: ServiceData[] = [
     {
         id: "elettromiografie",
         title: "Elettromiografie",
-        icon: Zap,
+        icon: ElectromyographyIcon,
         description:
             "Esame diagnostico per valutare la funzionalità di muscoli e nervi periferici.",
         details: ["Elettromiografia (EMG)", "Elettroneurografia (ENG)"],
@@ -154,8 +188,8 @@ export default function Services() {
                             onClick={() => openModal(service)}
                             className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all hover:-translate-y-2 cursor-pointer border border-gray-100 hover:border-primary/30 flex flex-col w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(25%-1.125rem)]"
                         >
-                            <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <service.icon className="w-7 h-7 stroke-2 text-primary group-hover:text-primary-dark transition-colors" />
+                            <div className="w-[60px] h-[60px] rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <service.icon className="w-8 h-8 stroke-2 text-primary group-hover:text-primary-dark transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors font-display">
                                 {service.title}
