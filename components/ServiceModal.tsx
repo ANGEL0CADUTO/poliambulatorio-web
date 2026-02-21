@@ -45,17 +45,17 @@ export default function ServiceModal({
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         className="fixed inset-0 z-[70] flex items-center justify-center p-4 pointer-events-none"
                     >
-                        <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto pointer-events-auto relative border border-gray-100">
+                        <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden flex flex-col pointer-events-auto relative border border-gray-100">
                             {/* Close Button */}
                             <button
                                 onClick={onClose}
-                                className="absolute top-6 right-6 p-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-colors z-10 text-gray-500 hover:text-gray-900"
+                                className="absolute top-6 right-6 p-2 rounded-full bg-white/90 backdrop-blur-sm border border-gray-100 shadow-sm hover:bg-gray-100 transition-colors z-20 text-gray-500 hover:text-gray-900"
                             >
                                 <X className="w-6 h-6" />
                             </button>
 
                             {/* Content */}
-                            <div className="p-8 md:p-10">
+                            <div className="p-8 md:p-10 overflow-y-auto">
                                 {/* Header */}
                                 <div className="flex items-center gap-5 mb-8">
                                     <div className="p-4 bg-primary/10 rounded-2xl">
