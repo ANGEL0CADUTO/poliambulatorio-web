@@ -6,14 +6,13 @@ import { CheckCircle } from "lucide-react";
 export default function Hero() {
     return (
         <section className="relative bg-background-light overflow-hidden min-h-[600px] flex flex-col justify-center border-b border-gray-200">
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            {/* Background Image - Local AI Generated Image */}
+            <div className="absolute inset-0 z-0 bg-background-light">
                 <img
-                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop"
-                    alt="Modern therapy gym"
-                    className="w-full h-full object-cover opacity-15 mix-blend-luminosity"
+                    src="/images/hero.webp"
+                    alt="Poliambulatorio Reception e Fisioterapia"
+                    className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-background-light via-background-light/90 to-background-light/40"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
