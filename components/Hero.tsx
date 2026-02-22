@@ -13,6 +13,8 @@ export default function Hero() {
                     alt="Poliambulatorio Reception e Fisioterapia"
                     className="w-full h-full object-cover object-center"
                 />
+                {/* Gradiente schiarito a sinistra per la leggibilità, ma con una leggera trasparenza iniziale per non essere colore solido */}
+                <div className="absolute inset-0 bg-gradient-to-r from-background-light/90 via-background-light/60 to-transparent sm:w-3/4 md:w-full"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
