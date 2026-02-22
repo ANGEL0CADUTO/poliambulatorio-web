@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -28,6 +29,8 @@ export default function RootLayout({
     <html lang="it" className="scroll-smooth">
       <body className={`${playfair.variable} ${jakarta.variable} font-sans antialiased bg-background-light text-text-dark`}>
         {children}
+        <Script type="text/javascript" src="https://embeds.iubenda.com/widgets/318d8ac6-5ac7-4e37-8994-bfd20c0da0ca.js" />
+        <Script type="text/javascript" src="https://cdn.iubenda.com/iubenda.js" />
       </body>
     </html>
   );

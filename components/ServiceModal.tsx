@@ -97,7 +97,7 @@ export default function ServiceModal({
                                                 Modalità di Accesso
                                             </h4>
                                             <p className="text-gray-600 leading-relaxed font-medium">
-                                                Queste prestazioni sono erogabili tramite Sistema Sanitario Nazionale (SSN con impegnativa), con Tariffario agevolato Anisap, oppure in regime Privato. Siamo inoltre convenzionati direttamente con i fondi EMEC, FASDAC e CAMPA.
+                                                La quasi totalità delle prestazioni è erogabile tramite Sistema Sanitario Nazionale (SSN con impegnativa), con Tariffario agevolato Anisap, oppure in regime Privato. Per verificare la modalità di accesso specifica per il singolo esame o trattamento, ti invitiamo a contattare la nostra segreteria. Siamo inoltre convenzionati con i fondi EMEC, FASDAC e CAMPA.
                                             </p>
                                         </div>
                                     </div>

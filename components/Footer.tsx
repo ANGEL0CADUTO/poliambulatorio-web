@@ -104,21 +104,21 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>
-                        © {new Date().getFullYear()} Poliambulatorio FKT Gemelli. P.IVA
-                        01234567890.
-                    </p>
-                    <div className="flex gap-6 mt-4 md:mt-0">
-                        <Link href="#" className="hover:text-primary-dark font-medium transition-colors">
-                            Privacy Policy
-                        </Link>
-                        <Link href="#" className="hover:text-primary-dark font-medium transition-colors">
-                            Cookie Policy
-                        </Link>
-                        <Link href="#" className="hover:text-primary-dark font-medium transition-colors">
-                            Direttore Sanitario
-                        </Link>
+                <div className="border-t border-gray-200 pt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 text-sm text-gray-500">
+                    <div className="space-y-1">
+                        <p>
+                            © 2026 Poliambulatorio Privato di Fisiokinesiterapia e Rieducazione Funzionale del Prof. Giovanni Gemelli & C. S.a.s.
+                        </p>
+                        <p>
+                            Sede Legale e Operativa: Via di Fiesso 6/6 - 40055 Castenaso (BO) | P.IVA e C.F: 01854771209
+                        </p>
+                        <p>
+                            Direttore Sanitario: Prof. Giovanni Gemelli - Iscrizione Ordine dei Medici di Bologna n. [INSERIRE_NUMERO_ALBO] | Aut. San. 12533/2004
+                        </p>
+                    </div>
+                    <div className="flex gap-6 whitespace-nowrap">
+                        <a href="https://www.iubenda.com/privacy-policy/73639484" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Privacy Policy">Privacy Policy</a>
+                        <a href="https://www.iubenda.com/privacy-policy/73639484/cookie-policy" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Cookie Policy">Cookie Policy</a>
                     </div>
                 </div>
             </div>
