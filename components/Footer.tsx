@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, MapPin, Phone, Clock, Navigation } from "lucide-react";
 
@@ -116,9 +118,16 @@ export default function Footer() {
                             Direttore Sanitario: Prof. Giovanni Gemelli - Iscrizione Ordine dei Medici di Bologna n. [INSERIRE_NUMERO_ALBO] | Aut. San. 12533/2004
                         </p>
                     </div>
-                    <div className="flex gap-6 whitespace-nowrap">
+                    <div className="flex flex-wrap gap-4 lg:gap-6 lg:whitespace-nowrap">
                         <a href="https://www.iubenda.com/privacy-policy/73639484" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Privacy Policy">Privacy Policy</a>
                         <a href="https://www.iubenda.com/privacy-policy/73639484/cookie-policy" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Cookie Policy">Cookie Policy</a>
+                        <a 
+                            href="#" 
+                            className="iubenda-cs-preferences-link hover:text-primary-dark font-medium transition-colors"
+                            onClick={(e) => e.preventDefault()}
+                        >
+                            Preferenze Cookie
+                        </a>
                     </div>
                 </div>
             </div>
