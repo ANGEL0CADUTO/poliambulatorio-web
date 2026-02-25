@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0891B2;
-  --color-primary-dark: #0E7490;
-  --color-primary-light: #22D3EE;
+  --color-primary: #0E7490;
+  --color-primary-dark: #155E75;
+  --color-primary-light: #06B6D4;
   --color-background-light: #F8FAFC;
   --color-text-dark: #1F2937;
   --color-text-muted: #475569;
@@ -27,17 +27,17 @@
 }
 
 /* --- IUBENDA STEALTH MODE: Hide Floating Widget --- */
-body > div.iubenda-cs-preferences-link,
-body > a.iubenda-cs-preferences-link,
-body > button.iubenda-cs-preferences-link,
+body>div.iubenda-cs-preferences-link,
+body>a.iubenda-cs-preferences-link,
+body>button.iubenda-cs-preferences-link,
 .iubenda-cs-floating-button,
 #iub-floating-widget,
 div[id^="iubFloatingBtn"] {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    width: 0px !important;
-    height: 0px !important;
-    z-index: -9999 !important;
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  z-index: -9999 !important;
 }

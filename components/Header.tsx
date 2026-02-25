@@ -91,6 +91,7 @@ export default function Header() {
                         {/* Mobile menu button */}
                         <div className="md:hidden flex items-center">
                             <button
+                                aria-label="Apri menu di navigazione"
                                 onClick={() => setIsOpen(!isOpen)}
                                 type="button"
                                 className="text-gray-600 hover:text-gray-900 focus:outline-none p-2"

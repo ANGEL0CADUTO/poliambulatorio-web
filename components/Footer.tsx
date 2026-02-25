@@ -15,7 +15,7 @@ export default function Footer() {
                                 FKT GEMELLI
                             </span>
                         </div>
-                        <p className="text-gray-400">
+                        <p className="text-gray-600">
                             Il tuo centro di fiducia per la salute a Castenaso. Accreditato SSN
                             per la massima qualità delle cure.
                         </p>
