@@ -81,6 +81,25 @@ const DopplerIcon = ({ className }: { className?: string }) => (
     />
 );
 
+// Custom SVG for Densitometria Ossea (Loaded via CSS Mask)
+const DexaIcon = ({ className }: { className?: string }) => (
+    <div
+        className={className}
+        style={{
+            WebkitMaskImage: 'url(/dexa-scan.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskRepeat: 'no-repeat',
+            WebkitMaskPosition: 'center',
+            maskImage: 'url(/dexa-scan.svg)',
+            maskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            backgroundColor: 'currentColor',
+            transform: 'scale(1.25) translateX(2px)'
+        }}
+    />
+);
+
 const services: ServiceData[] = [
     {
         id: "visite",
@@ -154,7 +173,7 @@ const services: ServiceData[] = [
     {
         id: "moc",
         title: "Densitometria Ossea (MOC)",
-        icon: Scan,
+        icon: DexaIcon, // Custom Dexa Scan Icon
         description:
             "Esame per il controllo della calcificazione ossea e la diagnosi dell'osteoporosi.",
         details: ["DEXA Vertebrale", "DEXA Femorale", "Controllo calcificazione ossea"],
