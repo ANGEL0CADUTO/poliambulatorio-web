@@ -5,6 +5,7 @@ import {
     Stethoscope,
     HeartPulse,
     Dumbbell,
+    Scan,
 } from "lucide-react";
 import ServiceModal, { ServiceData } from "./ServiceModal";
 
@@ -126,7 +127,7 @@ const services: ServiceData[] = [
         icon: ElectromyographyIcon,
         description:
             "Esame diagnostico per valutare la funzionalità di muscoli e nervi periferici.",
-        details: ["Elettromiografia (EMG)", "Elettroneurografia (ENG)"],
+        details: ["Elettromiografia (EMG) Arti Superiori e Inferiori"],
         accessMode:
             "Prestazione erogabile tramite Sistema Sanitario Nazionale (impegnativa) e regime Privato.",
     },
@@ -146,9 +147,19 @@ const services: ServiceData[] = [
         icon: TherapyDeviceIcon, // Custom Device Icon
         description:
             "Utilizzo di energie fisiche a scopo terapeutico per la cura di diverse patologie.",
-        details: ["Tecarterapia", "Laserterapia", "Magnetoterapia", "Ultrasuoni", "Onde d'Urto"],
+        details: ["Tecarterapia", "Laserterapia", "Magnetoterapia", "Ultrasuoni", "Elettrostimolazioni", "Ionoforesi", "Idrogalvanoterapia"],
         accessMode:
             "Disponibile principalmente in regime Privato e fondi integrativi/convenzioni.",
+    },
+    {
+        id: "moc",
+        title: "Densitometria Ossea (MOC)",
+        icon: Scan,
+        description:
+            "Esame per il controllo della calcificazione ossea e la diagnosi dell'osteoporosi.",
+        details: ["DEXA Vertebrale", "DEXA Femorale", "Controllo calcificazione ossea"],
+        accessMode:
+            "La quasi totalità delle prestazioni è erogabile tramite Sistema Sanitario Nazionale (SSN con impegnativa), con Tariffario agevolato Anisap, oppure in regime Privato. Per verificare la modalità di accesso specifica per il singolo esame o trattamento, ti invitiamo a contattare la nostra segreteria. Siamo inoltre convenzionati con i fondi EMEC, FASDAC e CAMPA.",
     },
 ];
 

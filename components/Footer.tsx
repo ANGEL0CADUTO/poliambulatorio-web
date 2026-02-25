@@ -115,14 +115,14 @@ export default function Footer() {
                             Sede Legale e Operativa: Via di Fiesso 6/6 - 40055 Castenaso (BO) | P.IVA e C.F: 01854771209
                         </p>
                         <p>
-                            Direttore Sanitario: Prof. Giovanni Gemelli - Iscrizione Ordine dei Medici di Bologna n. [INSERIRE_NUMERO_ALBO] | Aut. San. 12533/2004
+                            Direttore Sanitario: Prof. Giovanni Gemelli - Iscrizione Ordine dei Medici di Bologna n. 873616 del Dicembre 1980 | Aut. San. 12533/2004
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-4 lg:gap-6 lg:whitespace-nowrap">
                         <a href="https://www.iubenda.com/privacy-policy/73639484" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Privacy Policy">Privacy Policy</a>
                         <a href="https://www.iubenda.com/privacy-policy/73639484/cookie-policy" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Cookie Policy">Cookie Policy</a>
-                        <a 
-                            href="#" 
+                        <a
+                            href="#"
                             className="iubenda-cs-preferences-link hover:text-primary-dark font-medium transition-colors"
                             onClick={(e) => e.preventDefault()}
                         >
