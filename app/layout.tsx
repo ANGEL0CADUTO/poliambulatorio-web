@@ -17,7 +17,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "Poliambulatorio FKT Gemelli - Visite e Diagnostica a Castenaso",
-  description: "Poliambulatorio privato e accreditato SSN a Castenaso (BO). Visite specialistiche, Ecocolordoppler, Elettromiografie, MOC DEXA, Cardiologia e Fisioterapia.",
+  description: "Poliambulatorio privato e accreditato SSN a Castenaso (BO). Visite specialistiche, Ecocolordoppler, Elettromiografie, DXA, Cardiologia e Fisioterapia.",
   keywords: [
     "Poliambulatorio Castenaso",
     "Fisiatra Bologna",
@@ -26,12 +26,17 @@ export const metadata: Metadata = {
     "Cardiologo Castenaso",
     "Ecocolordoppler Bologna",
     "Elettromiografia arti Bologna",
-    "MOC DEXA Castenaso",
+    "DXA MOC Castenaso",
     "Tecarterapia Bologna",
     "Ionoforesi",
     "Visita Dietologica",
     "Terapia del dolore",
-    "Esami SSN Bologna"
+    "Esami SSN Bologna",
+    "Medicina Estetica Castenaso",
+    "Filler Bologna",
+    "Mesoterapia",
+    "Pressoterapia",
+    "Trattamenti cellulite Bologna"
   ],
   alternates: {
     canonical: "https://www.poliambulatoriofktgemelli.it",

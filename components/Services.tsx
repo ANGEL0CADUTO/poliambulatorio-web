@@ -100,6 +100,24 @@ const DexaIcon = ({ className }: { className?: string }) => (
     />
 );
 
+// Custom SVG for Medicina Estetica (Loaded via CSS Mask)
+const EsteticaIcon = ({ className }: { className?: string }) => (
+    <div
+        className={className}
+        style={{
+            WebkitMaskImage: 'url(/medicine-box.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskRepeat: 'no-repeat',
+            WebkitMaskPosition: 'center',
+            maskImage: 'url(/medicine-box.svg)',
+            maskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            backgroundColor: 'currentColor'
+        }}
+    />
+);
+
 const services: ServiceData[] = [
     {
         id: "visite",
@@ -171,12 +189,30 @@ const services: ServiceData[] = [
             "Disponibile principalmente in regime Privato e fondi integrativi/convenzioni.",
     },
     {
-        id: "moc",
-        title: "Densitometria Ossea (MOC)",
+        id: "dxa",
+        title: "Densitometria Ossea (DXA)",
         icon: DexaIcon, // Custom Dexa Scan Icon
         description:
             "Esame per il controllo della calcificazione ossea e la diagnosi dell'osteoporosi.",
-        details: ["DEXA Vertebrale", "DEXA Femorale", "Controllo calcificazione ossea"],
+        details: ["DXA Vertebrale", "DXA Femorale", "Controllo calcificazione ossea"],
+        accessMode:
+            "La quasi totalità delle prestazioni è erogabile tramite Sistema Sanitario Nazionale (SSN con impegnativa), con Tariffario agevolato Anisap, oppure in regime Privato. Per verificare la modalità di accesso specifica per il singolo esame o trattamento, ti invitiamo a contattare la nostra segreteria. Siamo inoltre convenzionati con i fondi EMEC, FASDAC e CAMPA.",
+    },
+    {
+        id: "estetica",
+        title: "Medicina Estetica",
+        icon: EsteticaIcon,
+        description:
+            "Trattamenti non invasivi per il benessere e la bellezza del viso e del corpo.",
+        details: [
+            "Filler con acido ialuronico (trattamento rughe)",
+            "Mesoterapia ed Elettrolipolisi per cellulite",
+            "Sclerosanti per capillari",
+            "Pressoterapia",
+            "Elettrostimolazioni (rassodamento addome e glutei)",
+            "Massaggi total body",
+            "Pulizia viso professionale"
+        ],
         accessMode:
             "La quasi totalità delle prestazioni è erogabile tramite Sistema Sanitario Nazionale (SSN con impegnativa), con Tariffario agevolato Anisap, oppure in regime Privato. Per verificare la modalità di accesso specifica per il singolo esame o trattamento, ti invitiamo a contattare la nostra segreteria. Siamo inoltre convenzionati con i fondi EMEC, FASDAC e CAMPA.",
     },
@@ -216,7 +252,7 @@ export default function Services() {
                         <div
                             key={service.id}
                             onClick={() => openModal(service)}
-                            className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all hover:-translate-y-2 cursor-pointer border border-gray-100 hover:border-primary/30 flex flex-col w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(25%-1.125rem)]"
+                            className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all hover:-translate-y-2 cursor-pointer border border-gray-100 hover:border-primary/30 flex flex-col w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
                         >
                             <div className="w-[60px] h-[60px] rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <service.icon className="w-8 h-8 stroke-2 text-primary group-hover:text-primary-dark transition-colors" />
