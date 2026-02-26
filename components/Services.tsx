@@ -113,7 +113,8 @@ const EsteticaIcon = ({ className }: { className?: string }) => (
             maskSize: 'contain',
             maskRepeat: 'no-repeat',
             maskPosition: 'center',
-            backgroundColor: 'currentColor'
+            backgroundColor: 'currentColor',
+            transform: 'scale(1.2)'
         }}
     />
 );
