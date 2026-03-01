@@ -39,7 +39,26 @@ export const metadata: Metadata = {
     "Trattamenti cellulite Bologna"
   ],
   alternates: {
-    canonical: "https://www.poliambulatoriofktgemelli.it",
+    canonical: "https://www.poliambulatorioprofgemelli.it",
+  },
+  openGraph: {
+    title: "Poliambulatorio FKT Gemelli | Castenaso",
+    description: "Visite specialistiche, Ecografie, Cardiologia e Riabilitazione a Castenaso. Accreditato SSN.",
+    url: "https://www.poliambulatorioprofgemelli.it",
+    siteName: "Poliambulatorio FKT Gemelli",
+    images: [
+      {
+        url: "https://www.poliambulatorioprofgemelli.it/opengraph-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Poliambulatorio FKT Gemelli Castenaso",
+      },
+    ],
+    locale: "it_IT",
+    type: "website",
+  },
+  verification: {
+    google: "t4qgY3sESKUL7BrRi7I0TX8cZ9knT-oxj5kqbnBXyxk",
   },
 };
 
@@ -52,6 +71,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Poliambulatorio Privato di FKT S.A.S.",
+    "url": "https://www.poliambulatorioprofgemelli.it",
+    "image": "https://www.poliambulatorioprofgemelli.it/opengraph-image.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via di Fiesso 6/6",

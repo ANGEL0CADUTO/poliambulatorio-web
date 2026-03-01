@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://www.poliambulatoriofktgemelli.it/sitemap.xml',
+        sitemap: 'https://www.poliambulatorioprofgemelli.it/sitemap.xml',
     }
 }
