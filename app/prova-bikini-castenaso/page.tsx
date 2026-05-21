@@ -127,7 +127,7 @@ export default function ProvaBikiniPage() {
               {/* Seasonal Campaign Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200/80 text-xs font-bold tracking-wide uppercase backdrop-blur-md shadow-sm">
                 <Sparkle className="w-3.5 h-3.5 fill-amber-500 text-amber-500 animate-pulse" />
-                <span>Percorso Medico Personalizzato • Inizia Subito</span>
+                <span><strong className="font-extrabold text-amber-950">Percorso Medico Personalizzato</strong> • Inizia Subito</span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] font-display text-gray-900">
@@ -153,22 +153,22 @@ export default function ProvaBikiniPage() {
               </div>
 
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
-                La formula scientifica del Poliambulatorio FKT Gemelli a Castenaso. Un percorso medico integrato e personalizzato guidato da nutrizionisti e fisioterapisti per ritrovare la forma in totale sicurezza ed efficacia per la stagione estiva.
+                La <strong className="font-bold text-gray-900">formula scientifica</strong> del Poliambulatorio FKT Gemelli a <strong className="font-bold text-gray-900">Castenaso</strong>. Un percorso medico <strong className="font-bold text-gray-900">integrato e personalizzato</strong> guidato da nutrizionisti e fisioterapisti per ritrovare la forma in totale <strong className="font-bold text-gray-900">sicurezza ed efficacia</strong> per la stagione estiva.
               </p>
 
               {/* Trust Markers */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <ShieldCheck className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  <span className="text-xs font-bold text-gray-800">Protocollo Clinico</span>
+                  <span className="text-sm lg:text-base font-bold text-gray-800">Protocollo Clinico</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <Building className="w-5 h-5 text-primary-dark flex-shrink-0" />
-                  <span className="text-xs font-bold text-gray-800">Palestra Medica Autorizzata</span>
+                  <span className="text-sm lg:text-base font-bold text-gray-800">Palestra Medica Autorizzata</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <UserCheck className="w-5 h-5 text-amber-600 flex-shrink-0" />
-                  <span className="text-xs font-bold text-gray-800">Medici e Nutrizionisti</span>
+                  <span className="text-sm lg:text-base font-bold text-gray-800">Medici e Nutrizionisti</span>
                 </div>
               </div>
 
@@ -235,8 +235,8 @@ export default function ProvaBikiniPage() {
             <h2 className="text-3xl sm:text-5xl font-extrabold font-display text-gray-900">
               Come Funziona il Programma
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg">
-              Abbiamo unito nutrizione clinica e allenamento medicale per assicurarti risultati rapidi, costanti e duraturi nel pieno rispetto delle articolazioni e della salute.
+            <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-base lg:text-xl">
+              Abbiamo unito <strong className="font-bold text-gray-900">nutrizione clinica</strong> e <strong className="font-bold text-gray-900">allenamento medicale</strong> per assicurarti <strong className="font-bold text-gray-900">risultati rapidi, costanti e duraturi</strong> nel pieno rispetto delle articolazioni e della salute.
             </p>
           </div>
 
@@ -276,15 +276,15 @@ export default function ProvaBikiniPage() {
                   </h3>
                 </div>
                 
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
-                  Nessun digiuno o diete drastiche. I nostri biologi nutrizionisti elaborano <strong className="text-gray-900 font-bold">piani alimentari scientifici personalizzati</strong> basati sulla bioimpedenziometria corporea, studiati per accelerare il metabolismo, ridurre la massa grassa e preservare la muscolatura tonica.
+                <p className="text-base lg:text-lg text-gray-600 leading-relaxed font-medium">
+                  Nessun digiuno o diete drastiche. I nostri <strong className="font-bold text-gray-900">biologi nutrizionisti</strong> elaborano <strong className="text-gray-900 font-bold">piani alimentari scientifici personalizzati</strong> basati sulla bioimpedenziometria corporea, studiati per <strong className="font-bold text-gray-900">accelerare il metabolismo</strong>, ridurre la massa grassa e preservare la <strong className="font-bold text-gray-900">muscolatura tonica</strong>.
                 </p>
 
                 <div className="grid gap-3 pt-2">
                   {caratteristicheDieta.map((feat, idx) => (
                     <div key={idx} className="flex gap-3 items-start">
                       <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-gray-600 font-semibold leading-tight">{feat}</span>
+                      <span className="text-sm sm:text-base lg:text-lg text-gray-600 font-semibold leading-tight">{feat}</span>
                     </div>
                   ))}
                 </div>
@@ -306,15 +306,15 @@ export default function ProvaBikiniPage() {
                   </h3>
                 </div>
                 
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
-                  L&apos;allenamento si svolge all&apos;interno della nostra <strong className="text-gray-900 font-bold">palestra medica protetta</strong> a Castenaso. Sarai seguito in ogni seduta da fisioterapisti e specialisti motori per eseguire esercizi mirati di tonificazione cutanea, muscolare ed elettrostimolazione (addome e glutei), in totale sicurezza articolare.
+                <p className="text-base lg:text-lg text-gray-600 leading-relaxed font-medium">
+                  L&apos;allenamento si svolge all&apos;interno della nostra <strong className="text-gray-900 font-bold">palestra medica protetta</strong> a <strong className="text-gray-900 font-bold">Castenaso</strong>. Sarai seguito in ogni seduta da <strong className="font-bold text-gray-900">fisioterapisti e specialisti motori</strong> per eseguire esercizi mirati di <strong className="font-bold text-gray-900">tonificazione cutanea, muscolare ed elettrostimolazione</strong> (addome e glutei), in totale <strong className="font-bold text-gray-900">sicurezza articolare</strong>.
                 </p>
 
                 <div className="grid gap-3 pt-2">
                   {caratteristichePalestra.map((feat, idx) => (
                     <div key={idx} className="flex gap-3 items-start">
                       <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-gray-600 font-semibold leading-tight">{feat}</span>
+                      <span className="text-sm sm:text-base lg:text-lg text-gray-600 font-semibold leading-tight">{feat}</span>
                     </div>
                   ))}
                 </div>
@@ -422,56 +422,56 @@ export default function ProvaBikiniPage() {
             
             {/* FAQ 1 */}
             <details className="group border border-gray-200/80 rounded-3xl bg-white p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/30 shadow-sm hover:shadow-soft">
-              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-sm sm:text-base lg:text-lg">
+              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg lg:text-xl">
                 <span>In cosa consiste il programma &apos;Prova Bikini&apos; Dieta e Palestra?</span>
                 <ChevronDown className="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary flex-shrink-0" />
               </summary>
-              <p className="mt-4 text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed pl-4 border-l-2 border-primary/20">
-                Si tratta di un percorso scientifico integrato e personalizzato, studiato per rimetterti in forma in salute. Unisce la consulenza e la stesura di un piano nutrizionale su misura (Dieta) preparato da specialisti nutrizionisti ad un programma di allenamento e tonificazione controllato (Palestra) all&apos;interno della nostra palestra medica.
+              <p className="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed pl-4 border-l-2 border-primary/20">
+                Si tratta di un <strong className="font-bold text-gray-900">percorso scientifico integrato e personalizzato</strong>, studiato per rimetterti in forma in salute. Unisce la consulenza e la stesura di un <strong className="font-bold text-gray-900">piano nutrizionale su misura (Dieta)</strong> preparato da specialisti nutrizionisti ad un <strong className="font-bold text-gray-900">programma di allenamento e tonificazione controllato (Palestra)</strong> all&apos;interno della nostra palestra medica.
               </p>
             </details>
 
             {/* FAQ 2 */}
             <details className="group border border-gray-200/80 rounded-3xl bg-white p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/30 shadow-sm hover:shadow-soft">
-              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-sm sm:text-base lg:text-lg">
+              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg lg:text-xl">
                 <span>Chi pianifica i programmi nutrizionali (dieta)?</span>
                 <ChevronDown className="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary flex-shrink-0" />
               </summary>
-              <p className="mt-4 text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed pl-4 border-l-2 border-primary/20">
-                La pianificazione e il controllo nutrizionale sono affidati esclusivamente ai biologi nutrizionisti del Poliambulatorio FKT Gemelli. Il piano viene sviluppato solo dopo un&apos;analisi attenta dello stato di salute del paziente e una misurazione bioimpedenziometrica precisa della composizione corporea.
+              <p className="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed pl-4 border-l-2 border-primary/20">
+                La pianificazione e il controllo nutrizionale sono affidati esclusivamente ai <strong className="font-bold text-gray-900">biologi nutrizionisti del Poliambulatorio FKT Gemelli</strong>. Il piano viene sviluppato solo dopo un&apos;analisi attenta dello stato di salute del paziente e una <strong className="font-bold text-gray-900">misurazione bioimpedenziometrica precisa</strong> della composizione corporea.
               </p>
             </details>
 
             {/* FAQ 3 */}
             <details className="group border border-gray-200/80 rounded-3xl bg-white p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/30 shadow-sm hover:shadow-soft">
-              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-sm sm:text-base lg:text-lg">
+              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg lg:text-xl">
                 <span>Quali sono i vantaggi di allenarsi nella palestra medica di FKT Gemelli?</span>
                 <ChevronDown className="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary flex-shrink-0" />
               </summary>
-              <p className="mt-4 text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed pl-4 border-l-2 border-primary/20">
-                La nostra palestra medica si differenzia nettamente dalle palestre tradizionali per la presenza costante di dottori in fisioterapia e scienze motorie. L&apos;attività fisica viene programmata per stimolare il dimagrimento e la tonificazione muscolare, ma con un controllo assoluto che evita sovraccarichi articolari, infortuni o posture scorrette.
+              <p className="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed pl-4 border-l-2 border-primary/20">
+                La nostra <strong className="font-bold text-gray-900">palestra medica</strong> si differenzia nettamente dalle palestre tradizionali per la <strong className="font-bold text-gray-900">presenza costante di dottori in fisioterapia e scienze motorie</strong>. L&apos;attività fisica viene programmata per stimolare il <strong className="font-bold text-gray-900">dimagrimento e la tonificazione muscolare</strong>, ma con un <strong className="font-bold text-gray-900">controllo assoluto</strong> che evita sovraccarichi articolari, infortuni o posture scorrette.
               </p>
             </details>
 
             {/* FAQ 4 */}
             <details className="group border border-gray-200/80 rounded-3xl bg-white p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/30 shadow-sm hover:shadow-soft">
-              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-sm sm:text-base lg:text-lg">
+              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg lg:text-xl">
                 <span>Come viene gestita la durata del percorso?</span>
                 <ChevronDown className="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary flex-shrink-0" />
               </summary>
-              <p className="mt-4 text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed pl-4 border-l-2 border-primary/20">
-                Il percorso non ha una durata predefinita o rigida. Viene interamente pianificato e personalizzato dai nostri nutrizionisti e fisioterapisti in base alla tua condizione di partenza, ai tuoi obiettivi e alla risposta del tuo corpo, garantendoti risultati visibili e stabili per tutta la stagione estiva.
+              <p className="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed pl-4 border-l-2 border-primary/20">
+                Il percorso <strong className="font-bold text-gray-900">non ha una durata predefinita o rigida</strong>. Viene interamente <strong className="font-bold text-gray-900">pianificato e personalizzato</strong> dai nostri nutrizionisti e fisioterapisti in base alla tua condizione di partenza, ai tuoi obiettivi e alla risposta del tuo corpo, garantendoti <strong className="font-bold text-gray-900">risultati visibili e stabili</strong> per tutta la stagione estiva.
               </p>
             </details>
 
             {/* FAQ 5 */}
             <details className="group border border-gray-200/80 rounded-3xl bg-white p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/30 shadow-sm hover:shadow-soft">
-              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-sm sm:text-base lg:text-lg">
+              <summary className="flex justify-between items-center font-bold text-gray-900 cursor-pointer list-none text-base sm:text-lg lg:text-xl">
                 <span>Come posso attivare il programma a Castenaso?</span>
                 <ChevronDown className="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-primary flex-shrink-0" />
               </summary>
-              <p className="mt-4 text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed pl-4 border-l-2 border-primary/20">
-                Attivarlo è facilissimo. Contattaci subito chiamando la nostra segreteria al numero <strong>051-787359</strong> o inviando un&apos;e-mail a <strong>poliamb.gemelli@tiscali.it</strong>. Prenoteremo la tua consulenza nutrizionale e motoria di inizio percorso e concorderemo insieme il calendario delle sedute.
+              <p className="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed pl-4 border-l-2 border-primary/20">
+                Attivarlo è facilissimo. <strong className="font-bold text-gray-900">Contattaci subito</strong> chiamando la nostra segreteria al numero <strong className="font-bold text-gray-900">051-787359</strong> o inviando un&apos;e-mail a <strong className="font-bold text-gray-900">poliamb.gemelli@tiscali.it</strong>. Prenoteremo la tua consulenza nutrizionale e motoria di inizio percorso e concorderemo insieme il calendario delle sedute.
               </p>
             </details>
 
