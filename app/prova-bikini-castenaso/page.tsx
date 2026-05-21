@@ -110,7 +110,7 @@ export default function ProvaBikiniPage() {
       <Header isPromoPage={true} />
 
       {/* Immersive Campaign Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-6 sm:pt-12 lg:pt-20 pb-16 lg:pb-20 overflow-hidden bg-background-light border-b border-gray-200/60">
+      <section className="relative min-h-[60vh] lg:min-h-0 flex items-center justify-center pt-6 sm:pt-12 lg:pt-16 pb-16 lg:pb-24 overflow-hidden bg-background-light border-b border-gray-200/60">
         
         {/* Soft background glows */}
         <div className="absolute inset-0 z-0">
@@ -122,7 +122,7 @@ export default function ProvaBikiniPage() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Content Column */}
-            <div className="lg:col-span-7 space-y-6 sm:space-y-8 order-2 lg:order-1">
+            <div className="lg:col-span-6 space-y-6 sm:space-y-8 order-2 lg:order-1">
               
               {/* Seasonal Campaign Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200/80 text-xs font-bold tracking-wide uppercase backdrop-blur-md shadow-sm">
@@ -130,7 +130,7 @@ export default function ProvaBikiniPage() {
                 <span><strong className="font-extrabold text-amber-950">Percorso Medico Personalizzato</strong> • Inizia Subito</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] font-display text-gray-900">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold tracking-tight leading-[1.1] font-display text-gray-900">
                 Programma <span className="text-amber-600 font-medium italic">Prova Bikini</span> <br />
                 <span className="text-primary-dark">Dieta e Palestra Medica</span>
               </h1>
@@ -152,7 +152,7 @@ export default function ProvaBikiniPage() {
                 </div>
               </div>
 
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
+              <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-medium">
                 La <strong className="font-bold text-gray-900">formula scientifica</strong> del Poliambulatorio FKT Gemelli a <strong className="font-bold text-gray-900">Castenaso</strong>. Un percorso medico <strong className="font-bold text-gray-900">integrato e personalizzato</strong> guidato da nutrizionisti e fisioterapisti per ritrovare la forma in totale <strong className="font-bold text-gray-900">sicurezza ed efficacia</strong> per la stagione estiva.
               </p>
 
@@ -160,15 +160,15 @@ export default function ProvaBikiniPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <ShieldCheck className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  <span className="text-sm lg:text-base font-bold text-gray-800">Protocollo Clinico</span>
+                  <span className="text-sm lg:text-base xl:text-lg font-bold text-gray-800">Protocollo Clinico</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <Building className="w-5 h-5 text-primary-dark flex-shrink-0" />
-                  <span className="text-sm lg:text-base font-bold text-gray-800">Palestra Medica Autorizzata</span>
+                  <span className="text-sm lg:text-base xl:text-lg font-bold text-gray-800">Palestra Medica Autorizzata</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-200/60 shadow-soft">
                   <UserCheck className="w-5 h-5 text-amber-600 flex-shrink-0" />
-                  <span className="text-sm lg:text-base font-bold text-gray-800">Medici e Nutrizionisti</span>
+                  <span className="text-sm lg:text-base xl:text-lg font-bold text-gray-800">Medici e Nutrizionisti</span>
                 </div>
               </div>
 
@@ -176,14 +176,14 @@ export default function ProvaBikiniPage() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
                   href="#contattaci"
-                  className="inline-flex justify-center items-center gap-2 px-8 py-4 text-base font-bold rounded-full text-white bg-amber-500 hover:bg-amber-600 transition-all transform hover:scale-105 shadow-soft shadow-amber-500/20 duration-300 text-center"
+                  className="inline-flex justify-center items-center gap-2 px-8 lg:px-10 py-4 lg:py-5 text-base lg:text-lg font-bold rounded-full text-white bg-amber-500 hover:bg-amber-600 transition-all transform hover:scale-105 shadow-soft shadow-amber-500/20 duration-300 text-center"
                 >
                   <span>Contattaci Subito!</span>
                   <ArrowRight className="w-4 h-4 animate-bounce-horizontal" />
                 </a>
                 <a
                   href="#percorso"
-                  className="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-full text-gray-700 border-2 border-primary/20 hover:border-primary/40 bg-white hover:bg-gray-50 transition-all text-center shadow-sm"
+                  className="inline-flex justify-center items-center px-8 lg:px-10 py-4 lg:py-5 text-base lg:text-lg font-bold rounded-full text-gray-700 border-2 border-primary/20 hover:border-primary/40 bg-white hover:bg-gray-50 transition-all text-center shadow-sm"
                 >
                   Scopri il Percorso
                 </a>
@@ -192,7 +192,7 @@ export default function ProvaBikiniPage() {
             </div>
 
             {/* Right Side Image Block (Visible on Desktop) */}
-            <div className="lg:col-span-5 hidden lg:block order-1 lg:order-2">
+            <div className="lg:col-span-6 hidden lg:block order-1 lg:order-2">
               <div className="relative group">
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-amber-500/10 to-primary-light/10 blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-300 z-0" />
                 
