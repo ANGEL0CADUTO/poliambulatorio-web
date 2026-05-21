@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
     Stethoscope,
     HeartPulse,
@@ -223,6 +223,32 @@ export default function Services() {
         null
     );
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    useEffect(() => {
+        if (!isModalOpen) return;
+
+        // Block background scroll
+        const originalOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        // Push history state to intercept mobile back button
+        window.history.pushState({ modalOpen: true }, "");
+
+        const handlePopState = () => {
+            setIsModalOpen(false);
+            setTimeout(() => setSelectedService(null), 300);
+        };
+
+        window.addEventListener("popstate", handlePopState);
+
+        return () => {
+            document.body.style.overflow = originalOverflow;
+            window.removeEventListener("popstate", handlePopState);
+            if (window.history.state?.modalOpen) {
+                window.history.back();
+            }
+        };
+    }, [isModalOpen]);
 
     const openModal = (service: ServiceData) => {
         setSelectedService(service);
