@@ -4,7 +4,7 @@ import { Building2, ShieldCheck, HeartPulse, Building } from "lucide-react";
 
 export default function TrustBar() {
     return (
-        <section className="bg-white border-b border-gray-100 py-10">
+        <section id="ssn" className="scroll-mt-24 bg-white border-b border-gray-100 py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
                     <p className="text-sm md:text-base text-gray-500 uppercase tracking-widest font-bold whitespace-nowrap">

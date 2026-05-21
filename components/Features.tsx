@@ -11,7 +11,7 @@ export default function Features() {
                         Perché Sceglierci
                     </h2>
                     <p className="text-base text-gray-600 max-w-2xl mx-auto">
-                        Una struttura medica d'eccellenza pensata attorno alle esigente del paziente.
+                        Una struttura medica d&apos;eccellenza pensata attorno alle esigenze del paziente.
                     </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">
@@ -34,7 +34,7 @@ export default function Features() {
                             <Microscope className="w-7 h-7 text-primary-dark" />
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2 font-display">
-                            Tecnologie All'avanguardia
+                            Tecnologie All&apos;avanguardia
                         </h3>
                         <p className="text-gray-600 leading-relaxed">
                             Attrezzature elettromedicali moderne ed ecografi di ultima generazione per diagnosi accurate e terapie mirate.

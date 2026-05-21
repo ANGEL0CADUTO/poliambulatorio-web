@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, Clock, MapPin, Activity } from "lucide-react";
 
-export default function Header() {
+export default function Header({ isPromoPage = false }: { isPromoPage?: boolean }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -19,7 +19,7 @@ export default function Header() {
                         </div>
                         <div className="hidden md:flex items-center gap-2">
                             <MapPin className="w-4 h-4" />
-                            <span>Via Fiesso 6/6, Castenaso (BO)</span>
+                            <span>Via Fiesso 6/6, 40055 Castenaso (BO)</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-2 font-semibold text-primary-dark">
@@ -52,36 +52,61 @@ export default function Header() {
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex items-center gap-8">
-                            <Link
-                                href="#"
-                                className="text-base font-medium text-gray-900 hover:text-primary transition-colors"
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href="#servizi"
-                                className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
-                            >
-                                Prestazioni
-                            </Link>
-                            <Link
-                                href="#ssn"
-                                className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
-                            >
-                                Accreditamento SSN
-                            </Link>
-                            <Link
-                                href="#contatti"
-                                className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
-                            >
-                                Contatti
-                            </Link>
+                            {isPromoPage ? (
+                                <>
+                                    <Link
+                                        href="#percorso"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Il Percorso
+                                    </Link>
+                                    <Link
+                                        href="#faq"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Chiarimenti
+                                    </Link>
+                                    <Link
+                                        href="#contattaci"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Contatti
+                                    </Link>
+                                </>
+                            ) : (
+                                <>
+                                    <Link
+                                        href="/"
+                                        className="text-base font-medium text-gray-900 hover:text-primary transition-colors"
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link
+                                        href="#servizi"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Prestazioni
+                                    </Link>
+                                    <Link
+                                        href="#ssn"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Accreditamento SSN
+                                    </Link>
+                                    <Link
+                                        href="#contatti"
+                                        className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+                                    >
+                                        Contatti
+                                    </Link>
+                                </>
+                            )}
                         </div>
 
                         {/* CTA Button */}
                         <div className="hidden md:block">
                             <Link
-                                href="#contatti"
+                                href={isPromoPage ? "#contattaci" : "#contatti"}
                                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-full text-white bg-primary hover:bg-primary-dark transition-all transform hover:scale-105 shadow-soft"
                             >
                                 Prenota Ora
@@ -110,37 +135,65 @@ export default function Header() {
                 {isOpen && (
                     <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg">
                         <div className="px-4 pt-2 pb-6 space-y-2">
-                            <Link
-                                href="#"
-                                className="block px-3 py-4 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href="#servizi"
-                                className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Prestazioni
-                            </Link>
-                            <Link
-                                href="#ssn"
-                                className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Accreditamento SSN
-                            </Link>
-                            <Link
-                                href="#contatti"
-                                className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Contatti
-                            </Link>
+                            {isPromoPage ? (
+                                <>
+                                    <Link
+                                        href="#percorso"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Il Percorso
+                                    </Link>
+                                    <Link
+                                        href="#faq"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Chiarimenti
+                                    </Link>
+                                    <Link
+                                        href="#contattaci"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Contatti
+                                    </Link>
+                                </>
+                            ) : (
+                                <>
+                                    <Link
+                                        href="/"
+                                        className="block px-3 py-4 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link
+                                        href="#servizi"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Prestazioni
+                                    </Link>
+                                    <Link
+                                        href="#ssn"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Accreditamento SSN
+                                    </Link>
+                                    <Link
+                                        href="#contatti"
+                                        className="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Contatti
+                                    </Link>
+                                </>
+                            )}
                             <div className="pt-4">
                                 <Link
-                                    href="#contatti"
+                                    href={isPromoPage ? "#contattaci" : "#contatti"}
                                     className="block w-full text-center px-6 py-3 border border-transparent text-base font-bold rounded-full text-white bg-primary hover:bg-primary-dark transition-colors shadow-lg"
                                     onClick={() => setIsOpen(false)}
                                 >

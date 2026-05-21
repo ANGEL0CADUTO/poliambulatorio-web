@@ -16,8 +16,8 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Poliambulatorio FKT Gemelli - Visite e Diagnostica a Castenaso",
-  description: "Poliambulatorio privato e accreditato SSN a Castenaso (BO). Visite specialistiche, Ecocolordoppler, Elettromiografie, DXA, Cardiologia e Fisioterapia.",
+  title: "Poliambulatorio FKT Gemelli - Centro medico a Castenaso",
+  description: "Poliambulatorio Gemelli a Castenaso (BO), accreditato SSN. Visite specialistiche, diagnostica, cardiologia, fisioterapia e riabilitazione.",
   keywords: [
     "Poliambulatorio Castenaso",
     "Fisiatra Bologna",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     canonical: "https://www.poliambulatorioprofgemelli.it",
   },
   openGraph: {
-    title: "Poliambulatorio FKT Gemelli | Castenaso",
-    description: "Visite specialistiche, Ecografie, Cardiologia e Riabilitazione a Castenaso. Accreditato SSN.",
+    title: "Poliambulatorio FKT Gemelli - Centro medico a Castenaso",
+    description: "Visite specialistiche, diagnostica, cardiologia e riabilitazione a Castenaso. Poliambulatorio accreditato SSN.",
     url: "https://www.poliambulatorioprofgemelli.it",
     siteName: "Poliambulatorio FKT Gemelli",
     images: [
@@ -70,12 +70,14 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Poliambulatorio Privato di FKT S.A.S.",
+    "name": "Poliambulatorio FKT Gemelli",
+    "alternateName": "Poliambulatorio Gemelli",
+    "legalName": "Poliambulatorio Privato di Fisiokinesiterapia e Rieducazione Funzionale del Prof. Giovanni Gemelli & C. S.a.s.",
     "url": "https://www.poliambulatorioprofgemelli.it",
     "image": "https://www.poliambulatorioprofgemelli.it/opengraph-image.webp",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Via di Fiesso 6/6",
+      "streetAddress": "Via Fiesso 6/6",
       "addressLocality": "Castenaso",
       "addressRegion": "BO",
       "postalCode": "40055",
@@ -83,6 +85,10 @@ export default function RootLayout({
     },
     "telephone": "+39051787359",
     "email": "poliamb.gemelli@tiscali.it",
+    "areaServed": {
+      "@type": "City",
+      "name": "Castenaso"
+    },
     "medicalSpecialty": ["Physiotherapy", "Cardiovascular", "Neurologic", "Ultrasound"],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

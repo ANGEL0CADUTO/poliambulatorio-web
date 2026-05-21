@@ -5,7 +5,6 @@ import {
     Stethoscope,
     HeartPulse,
     Dumbbell,
-    Scan,
 } from "lucide-react";
 import ServiceModal, { ServiceData } from "./ServiceModal";
 
@@ -243,7 +242,7 @@ export default function Services() {
                         Le Nostre Specialità
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Un'offerta sanitaria completa per rispondere a ogni tua esigenza,
+                        Un&apos;offerta sanitaria completa per rispondere a ogni tua esigenza,
                         dalla diagnosi alla riabilitazione.
                     </p>
                 </div>

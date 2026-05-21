@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -34,7 +33,7 @@ export default function Hero() {
                     <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl font-medium">
                         Un punto di riferimento per la fisioterapia e la diagnostica
                         specialistica. Accoglienza, professionalità e tecnologie
-                        all'avanguardia al servizio del tuo benessere.
+                        all&apos;avanguardia al servizio del tuo benessere.
                     </p>
 
                     {/* Buttons */}

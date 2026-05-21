@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { Mail, MapPin, Phone, Clock, Navigation } from "lucide-react";
+import { Mail, MapPin, Phone, Navigation } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -23,9 +22,7 @@ export default function Footer() {
                             <div className="flex items-start gap-3">
                                 <MapPin className="text-primary w-5 h-5 mt-1" />
                                 <span>
-                                    Via Fiesso 6/6
-                                    <br />
-                                    40055 Castenaso (BO)
+                                    Via Fiesso 6/6, 40055 Castenaso (BO)
                                 </span>
                             </div>
                             <div className="flex items-center gap-3">
@@ -83,18 +80,18 @@ export default function Footer() {
                     {/* Map Column */}
                     <div className="h-full min-h-[300px] rounded-2xl overflow-hidden bg-gray-100 relative group shadow-soft border border-gray-200">
                         <iframe
-                            title="Mappa Castenaso"
+                            title="Mappa Via Fiesso 6/6, Castenaso"
                             width="100%"
                             height="100%"
                             style={{ border: 0, filter: "grayscale(20%) opacity(80%)" }}
                             loading="lazy"
                             allowFullScreen
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.166373724838!2d11.4394043!3d44.5085444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3a5f4f4f4f5%3A0x1234567890abcdef!2sVia%20Fiesso%2C%206%2C%2040055%20Castenaso%20BO!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit"
+                            src="https://www.google.com/maps?q=Via%20Fiesso%206%2F6%2C%2040055%20Castenaso%20BO&output=embed"
                             className="absolute inset-0 opacity-60 group-hover:opacity-80 transition-opacity"
                         ></iframe>
                         <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none p-4 text-center">
                             <a
-                                href="https://www.google.com/maps/dir//Via+Fiesso,+6,+40055+Castenaso+BO"
+                                href="https://www.google.com/maps/dir/?api=1&destination=Via%20Fiesso%206%2F6%2C%2040055%20Castenaso%20BO"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="pointer-events-auto bg-white text-primary-dark px-6 py-3 rounded-full shadow-soft font-bold flex items-center gap-2 hover:scale-105 transition-transform border border-gray-100"
@@ -112,7 +109,7 @@ export default function Footer() {
                             © 2026 Poliambulatorio Privato di Fisiokinesiterapia e Rieducazione Funzionale del Prof. Giovanni Gemelli & C. S.a.s.
                         </p>
                         <p>
-                            Sede Legale e Operativa: Via di Fiesso 6/6 - 40055 Castenaso (BO) | P.IVA e C.F: 01854771209
+                            Sede Legale e Operativa: Via Fiesso 6/6 - 40055 Castenaso (BO) | P.IVA e C.F: 01854771209
                         </p>
                         <p>
                             Direttore Sanitario: Prof. Giovanni Gemelli - Iscrizione Ordine dei Medici di Bologna n. 873616 del Dicembre 1980 | Aut. San. 12533/2004
@@ -121,13 +118,12 @@ export default function Footer() {
                     <div className="flex flex-wrap gap-4 lg:gap-6 lg:whitespace-nowrap">
                         <a href="https://www.iubenda.com/privacy-policy/73639484" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Privacy Policy">Privacy Policy</a>
                         <a href="https://www.iubenda.com/privacy-policy/73639484/cookie-policy" className="iubenda-nostyle no-brand iubenda-noiframe hover:text-primary-dark font-medium transition-colors" title="Cookie Policy">Cookie Policy</a>
-                        <a
-                            href="#"
+                        <button
+                            type="button"
                             className="iubenda-cs-preferences-link hover:text-primary-dark font-medium transition-colors"
-                            onClick={(e) => e.preventDefault()}
                         >
                             Preferenze Cookie
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

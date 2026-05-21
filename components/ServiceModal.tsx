@@ -1,12 +1,13 @@
 "use client";
 
+import type { ComponentType } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle, Info } from "lucide-react";
 
 export interface ServiceData {
     id: string;
     title: string;
-    icon: any; // Lucide icon
+    icon: ComponentType<{ className?: string }>;
     description: string;
     details: string[];
     accessMode: string;
