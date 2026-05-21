@@ -110,7 +110,7 @@ export default function ProvaBikiniPage() {
       <Header isPromoPage={true} />
 
       {/* Immersive Campaign Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-24 sm:pt-28 pb-16 lg:pb-20 overflow-hidden bg-background-light border-b border-gray-200/60">
+      <section className="relative min-h-[90vh] flex items-center justify-center pt-6 sm:pt-12 lg:pt-20 pb-16 lg:pb-20 overflow-hidden bg-background-light border-b border-gray-200/60">
         
         {/* Soft background glows */}
         <div className="absolute inset-0 z-0">
@@ -347,7 +347,7 @@ export default function ProvaBikiniPage() {
       </section>
 
       {/* Main Campaign Booking CTA: CONTATTACI SUBITO! */}
-      <section id="contattaci" className="py-16 sm:py-24 bg-white scroll-mt-20 relative">
+      <section id="contattaci" className="pt-4 pb-16 sm:py-24 bg-white scroll-mt-24 sm:scroll-mt-20 relative">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute top-[20%] right-[-10%] w-[300px] h-[300px] rounded-full bg-primary/10 blur-[90px]" />
           <div className="absolute bottom-[20%] left-[-10%] w-[300px] h-[300px] rounded-full bg-amber-500/5 blur-[90px]" />
