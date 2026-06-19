@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
+import BikiniPromo from "@/components/BikiniPromo";
 import PreFooterCTA from "@/components/PreFooterCTA";
 import MobileCTA from "@/components/MobileCTA";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <TrustBar />
       <Features />
       <Services />
+      <BikiniPromo />
       <PreFooterCTA />
       <Footer />
       <MobileCTA />
